@@ -1,4 +1,4 @@
-class ErrorsController < ApplicationController
+class ChallengesController < ApplicationController
   before_action :authenticate_user!, only: [ :index, :show ]
   def index
   end

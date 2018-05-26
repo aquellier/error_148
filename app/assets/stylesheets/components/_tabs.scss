@@ -1,0 +1,18 @@
+.tab {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: lighter;
+  color: $white-smoke;
+  opacity: 0.4;
+  padding-bottom: 10px;
+  margin: 0px;
+  &:hover {
+    opacity: 1;
+    border-bottom: 1px inset $white-smoke;
+  }
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 5px solid #00A699;
+}

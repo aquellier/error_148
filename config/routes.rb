@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'errors/index'
-  get 'errors/show'
-  get 'errors/new'
-  get 'errors/create'
-  get 'errors/edit'
-  get 'errors/update'
+  get 'challenges/index'
+  get 'challenges/show'
+  get 'challenges/new'
+  get 'challenges/create'
+  get 'challenges/edit'
+  get 'challenges/update'
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :errors, except: [:destroy]
+  resources :challenges, except: [:destroy]
 end
