@@ -94,8 +94,8 @@
 }
 
 .rotate {
-    -webkit-animation: spin 150s infinite linear;
-    animation: spin 150s infinite linear;
+    -webkit-animation: spin 100s infinite linear;
+    animation: spin 100s infinite linear;
 }
 @-webkit-keyframes spin {
     100% { -webkit-transform: rotate(360deg); }
