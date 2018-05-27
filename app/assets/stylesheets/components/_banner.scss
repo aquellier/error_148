@@ -4,11 +4,20 @@
   text-align: center;
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.banner-photo {
+  background-size: cover !important;
+  color: white;
+  text-align: center;
+  height: calc(100vh - 90px);
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  display: flex;
+  justify-content: center;
 }
 
 .banner h1 {

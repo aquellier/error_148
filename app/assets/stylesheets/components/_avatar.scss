@@ -3,4 +3,12 @@
   width: 50px;
   border: 1px solid white;
   border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.avatar-big {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
 }
