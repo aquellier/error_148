@@ -1,10 +1,15 @@
-<% @challenges.each do |challenge| %>
-  <li class="list_items">
-      <h3><strong><%= challenge.name%></strong></h3>
-      <p><%= challenge.description %></p>
-      <br>
-      <p><%= challenge.link %></p>
-      <br>
-      <p><%= challenge.link_git %></p>
-  </li>
-<% end %>
+<div class="container">
+  <div class="row">
+      <% @challenges.each do |challenge| %>
+        <li class="list_challenges">
+            <h3><strong><%= challenge.name%></strong></h3>
+            <p><%= challenge.description %></p>
+            <br>
+            <p><%= challenge.link %></p>
+            <br>
+            <p><%= challenge.link_git %></p>
+        </li>
+      <% end %>
+  </div>
+</div>
+

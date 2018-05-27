@@ -29,7 +29,6 @@ class ChallengesController < ApplicationController
   end
 
   def update
-
   end
 
   private

@@ -1,6 +1,7 @@
 <%= simple_form_for(@challenge) do |f| %>
     <%= f.input :name %>
     <%= f.input :description, as: :text%>
+    <%= f.association :language, as: :select %>
     <%= f.input :link %>
     <%= f.input :link_git %>
 

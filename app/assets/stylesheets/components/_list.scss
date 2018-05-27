@@ -18,3 +18,13 @@
   flex: 1 1 auto;
 }
 
+.list_challenges {
+  list-style: none;
+  background-color: $light-gray;
+  color: $dark-gray;
+  border-radius: 5px;
+  padding: 1px 10px;
+  h3 {
+    text-align: center;
+  }
+}
