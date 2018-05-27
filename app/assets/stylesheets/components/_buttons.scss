@@ -1,51 +1,60 @@
-.btn-black {
+.btn-base {
     background-color: transparent;
     color: $white-smoke;
     border: 2px solid $white-smoke;
     padding: 5px 30px;
-    border-radius: 4px;
+}
+
+.btn-black {
+  border-radius: 4px;
   &:hover {
     background-color: $white-smoke;
     color: black;
   }
 }
 
-.btn-red {
-  background-color: transparent;
-  color: $white-smoke;
-  border: 2px solid red;
-  padding: 5px 30px;
+.btn-action {
+  color: $light-gray;
   border-radius: 30px;
-  &:hover{
-    border: 2px solid $white-smoke;
-    color: $white-smoke;
+  animation: glowing 1500ms infinite;
+  border: 0px;
+  &:hover {
+    text-decoration: none;
+    color: white;
   }
 }
 
-.btn-flashing {
-  animation: glowing 1500ms infinite;
-// @-webkit-keyframes glowing {
-//   0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-//   50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-//   100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-// }
-
-// @-moz-keyframes glowing {
-//   0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-//   50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-//   100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-// }
-
-// @-o-keyframes glowing {
-//   0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-//   50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-//   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-// }
-
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+.flashing-red {
+  @keyframes glowing-red {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  }
 }
+
+.flashing-green {
+  @-webkit-keyframes glowing {
+    0% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+    50% { background-color: #00ff00; box-shadow: 0 0 40px #00ff00; }
+    100% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+  }
+  @-moz-keyframes glowing {
+    0% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+    50% { background-color: #00ff00; box-shadow: 0 0 40px #00ff00; }
+    100% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+  }
+  @-o-keyframes glowing {
+    0% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+    50% { background-color: #00ff00; box-shadow: 0 0 40px #00ff00; }
+    100% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+  }
+  @keyframes glowing {
+    0% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+    50% { background-color: #00ff00; box-shadow: 0 0 40px #00ff00; }
+    100% { background-color: #00B200; box-shadow: 0 0 3px #00B200; }
+  }
 }
+
+
+
 

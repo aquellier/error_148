@@ -1,20 +1,20 @@
 .list_items {
-  display: flex;
-  align-items: center;
   padding: 10px;
   padding-left: 0;
   border-radius: 5px;
   transition: all 0.15s ease;
   margin: 10px 0;
-  &:hover {
-  // background-color: url("https://static4.depositphotos.com/1020804/364/i/950/depositphotos_3649646-stock-photo-background-in-the-form-of.jpg");
-  background-color: #ede6e6;
-  }
-  h3 {
-    margin-left: 0;
-  }
 }
-
+.hrz-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 0 auto;
+}
+.list-btn {
+  padding: 0 100px;
+}
 .flexing-stuff {
   flex: 1 1 auto;
 }
+
