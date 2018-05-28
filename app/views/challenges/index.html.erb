@@ -3,6 +3,7 @@
       <% @challenges.each do |challenge| %>
         <li class="list_challenges">
             <h3><strong><%= challenge.name%></strong></h3>
+            <p><%= challenge.@language.name %></p>
             <p><%= challenge.description %></p>
             <br>
             <p><%= challenge.link %></p>
