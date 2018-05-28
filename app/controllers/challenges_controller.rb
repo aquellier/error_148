@@ -1,5 +1,5 @@
 class ChallengesController < ApplicationController
-  before_action :authenticate_user!, only: [ :index, :show ]
+  skip_before_action :authenticate_user!, only: [ :home_challenges, :index ]
   before_action :set_challenge, only: [:show, :edit]
 
   def home_challenges
@@ -38,6 +38,6 @@ class ChallengesController < ApplicationController
   end
 
   def challenge_params
-    params.require(:challenge).permit(:name, :description, :link, :link_git)
+    params.require(:challenge).permit(:name, :description, :language, :link, :link_git)
   end
 end
