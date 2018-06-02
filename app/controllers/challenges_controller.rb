@@ -38,6 +38,6 @@ class ChallengesController < ApplicationController
   end
 
   def challenge_params
-    params.require(:challenge).permit(:name, :description, :language, :link, :link_git)
+    params.require(:challenge).permit(:title, :subtitle, :content)
   end
 end
