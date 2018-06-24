@@ -1,17 +1,6 @@
-<div class="container">
+<div class="cards-container">
   <div class="row">
-      <% @challenges.each do |challenge| %>
-        <li class="list_challenges">
-          <h3><strong><%= challenge.name%></strong></h3>
-          <p><%= challenge.language.name %></p>
-          <p><%= challenge.description %></p>
-          <br>
-          <div class="inline-items">
-            <%= link_to "See page", challenge.link, class: 'btn-base' %>
-            <%= link_to "See github code", challenge.link_git, class: 'btn-base' %>
-          </div>
-        </li>
-      <% end %>
+    <%= render @challenges  %>
   </div>
 </div>
 

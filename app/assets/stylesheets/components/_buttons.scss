@@ -1,8 +1,12 @@
 .btn-base {
     background-color: transparent;
+    border-radius: 15px;
     color: $white-smoke;
     border: 2px solid $white-smoke;
     padding: 5px 30px;
+    &:hover {
+      text-decoration: none;
+    }
 }
 
 .btn-black {
