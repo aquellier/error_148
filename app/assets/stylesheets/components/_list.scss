@@ -14,8 +14,9 @@
 .list-btn {
   padding: 0 100px;
 }
-.flexing-stuff {
-  flex: 1 1 auto;
+.inline-items {
+  display: flex;
+  justify-content: space-between;
 }
 
 .list_challenges {

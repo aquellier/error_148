@@ -1,5 +1,5 @@
 /* Your card CSS code here */
-.card {
+.article-card {
   flex: 1 1 auto;
   margin: 10px;
   border-radius: 1px;
@@ -17,20 +17,20 @@
   padding-left: 10px;
 }
 
-.card-picture {
+.article-card-picture {
   height: 200px;
   background-size: cover;
   color: white;
   position: relative;
 }
 
-.card-text {
+.article-card-text {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
-.card-body {
+.article-card-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,12 +39,12 @@
   position: absolute;
 }
 
-.card:hover {
+.article-card:hover {
   margin-top: -15px;
   transition: 0.3s;
 }
 
-.card-body p {
+.article-card-body p {
   font-size: 12px;
   color: #999999;
   font-weight: lighter;
