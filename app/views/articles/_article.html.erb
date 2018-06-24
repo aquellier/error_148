@@ -1,0 +1,12 @@
+<div class="col-xs-12 col-sm-6">
+  <div class="article-card">
+    <%= link_to article_path(article) do %>
+      <div class="article-card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdXqxj7yu5jz6bMr7oEesrjv_3v-aRkfvJYjKyQD4txYng75SM9w');">
+      <div class="article-card-body">
+        <h1><%= article.title %></h1>
+        <p><%= article.subtitle %></p>
+      </div>
+      </div>
+    <% end %>
+  </div>
+</div>
