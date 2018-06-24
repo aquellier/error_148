@@ -6,9 +6,9 @@
             <p><%= challenge.language.name %></p>
             <p><%= challenge.description %></p>
             <br>
-            <p><%= challenge.link %></p>
+            <p><%= link_to "See page", challenge.link %></p>
             <br>
-            <p><%= challenge.link_git %></p>
+            <p><%= link_to "See github code", challenge.link_git %></p>
         </li>
       <% end %>
   </div>
